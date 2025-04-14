@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Renees Jenisha J Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('proback.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      backdrop-filter: brightness(0.95);
+    }
+
+    header {
+      background-color: rgba(255, 182, 193, 0.8); /* light pink */
+      padding: 80px 0 40px;
+      text-align: center;
+      position: relative;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: white;
+      margin-bottom: 20px;
+      animation: slideToCenter 4s ease-out forwards;
+      white-space: nowrap;
+      position: relative;
+    }
+
+    @keyframes slideToCenter {
+      0% {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    header img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+      transition: transform 0.4s ease-in-out;
+    }
+
+    header img:hover {
+      transform: scale(1.1);
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      background: rgba(255, 240, 245, 0.95);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h2 {
+      color: #c2185b;
+      margin-bottom: 15px;
+    }
+
+    h3 {
+      color: #d81b60;
+    }
+
+    p, li, a {
+      color: #333;
+    }
+
+    .projects {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .project {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background: #fce4ec;
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+    }
+
+    .project img {
+      width: 150px;
+      height: 100px;
+      border-radius: 10px;
+      object-fit: cover;
+      cursor: pointer;
+    }
+
+    .skills-hobbies {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .skills-hobbies > div {
+      flex: 1 1 30%;
+    }
+
+    .skills-hobbies ul {
+      list-style: circle;
+      padding-left: 20px;
+    }
+
+    .contact {
+      background: #f8bbd0;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: left;
+    }
+
+    .contact a {
+      text-decoration: none;
+      color: #ad1457;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .project {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      header img {
+        width: 160px;
+        height: 160px;
+      }
+
+      .skills-hobbies > div {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>RENEES JENISHA J</h1>
+    <img src="renee.jpg" alt="Renees Jenisha J">
+  </header>
+
+  <div class="container">
+    <h2>About Me</h2>
+    <p>Hello! I'm Renees Jenisha J, As a student intern at FlutterFrog Software Solutions, I have been applying my research skills, leadership, and engineering knowledge to contribute to various projects in the field of information technology. I am currently pursuing a B.Tech in Information Technology from St.xaviers catholic college of engineering, where I have been learning the latest technologies and trends in the industry. I am passionate about solving complex problems, creating innovative solutions, and collaborating with diverse teams. My goal is to gain valuable experience, develop my professional skills, and make a positive impact on the society through technology.</p>
+  </div>
+
+  <div class="container">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <a href="https://github.com/Renees009/Sustainovate-25">
+          <img src="project1.jpeg" alt="Project 1">
+        </a>
+        <div>
+          <strong>Project 1 Title</strong>
+          <p>A web application built using Flutter for solving sustainable problems relevant to footprint for the industry.</p>
+        </div>
+      </div>
+      <div class="project">
+        <a href="https://github.com/Renees009/flutter_E_certify">
+          <img src="project2.png" alt="Project 2">
+        </a>
+        <div>
+          <strong>Project 2 Title</strong>
+          <p>A Flutter application used for generating E-certificates for decentralization purposes.</p>
+        </div>
+      </div>
+      <div class="project">
+        <a href="https://github.com/747774-jebin/lifetap">
+          <img src="project3.jpeg" alt="Project 3">
+        </a>
+        <div>
+          <strong>Project 3 Title</strong>
+          <p>A Flutter app used for connecting all blood banks and centers to help people during emergencies.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>Skills & Hobbies</h2>
+    <div class="skills-hobbies">
+      <div>
+        <h3>Technical Skills</h3>
+        <ul>
+          <li>Flutter</li>
+          <li>HTML, CSS, JavaScript</li>
+          <li>Java</li>
+          <li>Firebase</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Soft Skills</h3>
+        <ul>
+          <li>Leadership</li>
+          <li>Empathy</li>
+          <li>Time Management</li>
+          <li>Optimism</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Hobbies</h3>
+        <ul>
+          <li>Semi-classical dancing</li>
+          <li>Acrylic Painting</li>
+          <li>Blog Writing</li>
+          <li>Chess</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container contact">
+    <h2>Contact Me</h2>
+    <p><strong>Phone:</strong> +91-9791736067</p>
+    <p><strong>Email:</strong> reneesjenisha@Gmail.com</p>
+    <p><strong>GitHub:</strong> <a href="https://github.com/Renees009" target="_blank">https://github.com/Renees009</a></p>
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/renees-jenisha-j-9b0ab0283/" target="_blank">LinkedIn Profile</a></p>
+  </div>
+
+</body>
+</html>
